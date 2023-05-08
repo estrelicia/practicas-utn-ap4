@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Ejercicio 13</h1>
+    <p>A través de un formulario, el usuario debe introducir un número secreto que estará
+        entre 0 y 5. El usuario tendrá tres intentos para acertar el número, si no lo logra, habrá perdido el
+        juego. Debemos indicar en un cuadro de texto si el usuario gana, falla el número o pierde.</p>
+       <form>
+        <h1>Adivina un número del 1 al 5</h1>
+        <ul>
+            <li>
+                <label for="numero">Número</label><br>
+                <input type="number" id="numero" name="numero">
+            </li>
+            <li>
+                <button type='button' value='convertir' onClick='adivinaNumero()'>Enviar Número</button>
+            </li>
+        </ul>
+    </form>
+    <span id="resultadoAdivinar"></span>
+    <script src="./assets/ejercicio13.js"></script>
+    <p><a href="./index.html">Regresar al índice</a></p>
+</body>
+
+</html>

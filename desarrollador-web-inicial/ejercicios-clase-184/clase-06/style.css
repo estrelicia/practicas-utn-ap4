@@ -1,0 +1,12 @@
+body {
+    background-color: #F2F2F2;
+}
+main {
+    width: 25%;
+}
+li {
+    background-color: #FFFFFF;
+    margin:10px 0px;
+    padding: 10px;
+    border-radius: 25px;
+}

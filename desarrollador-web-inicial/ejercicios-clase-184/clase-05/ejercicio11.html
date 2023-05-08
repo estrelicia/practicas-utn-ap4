@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 09-10 </title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Ejercicio 11</h1>
+    <p>Ejercicio 11:Hacer un formulario que convierta de grados centígrados a grados Fahrenheit. Para
+        ello deberá multiplicar por 9/5 y sumar 32. Tener en cuenta que 30 grados centígrados
+        son 86 grados fahrenheit.</p>
+    <form>
+        <h1>Conversión grados Celsius a Fahrenheit</h1>
+        <ul>
+            <li>
+                <label for="gradosC">Grados Celsius</label><br>
+                <input type="number" id="gradosC" name="gradosC">
+            </li>
+            <li>
+                <button type='button' value='convertir' onClick='convertirC()'>Convertir C a F</button>
+            </li>
+        </ul>
+    </form>
+    <span id="resultado"></span>
+    <script src="./assets/ejercicio11.js"></script>
+    <p><a href="./index.html">Regresar al índice</a></p>
+</body>
+</html>

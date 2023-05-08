@@ -1,0 +1,79 @@
+html {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    padding: 2.5%;
+    width: 50%;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+form {
+    align-self: center;
+    margin: 0 auto;
+    width: 75%;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form h1 {
+    font-size: 1.25rem;
+}
+ul {
+    width: 100%;
+    list-style-type: none;
+}
+li {
+    display: block;
+    width:100%;
+}
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}	
+button {
+    width: 50%;
+    font-family: inherit;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: rgb(0, 128, 0);
+    border:2px rgb(0, 128, 0) solid;
+    color: rgb(255, 255, 255);
+    margin: 10px 0 5px 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 128, 0);
+    border:2px rgb(0, 128, 0) solid;
+}	
+#peque, #normal, #grande {
+    margin: 0px;
+    padding: 0px;
+    width: 5%;
+}
+li radio-dimensiones {
+    display: inline-block;
+}
+main {
+    flex:50%;
+}
+aside {
+    flex:50%;
+}
+.contenidos {
+    display: flex;
+}
+.ul-ejercicio13 {
+    padding: 4% 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagenes/fotos/logo 3ico.ico" />
+  <!-- HOJAS DE ESTILO-->
+  <link rel="stylesheet" href="./style.css">
+  <title>Pagina web</title>
+</head>
+
+<body>
+
+  <header>
+  </header>
+  <section id="formulario">
+    <form>
+      <div class="paso">
+        <fielset>
+          <legend>Cursos Online</legend>
+          <label for="html">HTML</label>
+          <input type="radio" id="html" name="cursos" value="html">
+          <label for="javascript">Javascript</label>
+          <input type="radio" id="javascript" name="cursos" value="javascript">
+          <label for="css">CSS</label>
+          <input type="radio" id="css" name="cursos" value="css">
+        </fielset>
+      </div>
+      <div class="paso">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido"><br>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo"><br>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" pattern="" placeholder="(+54) 011 1111-5555"><br>
+      </div>
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

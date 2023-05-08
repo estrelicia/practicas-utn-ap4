@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="contenidos">
+        <main>
+            <h1>Ejercicio 14</h1>
+            <p>Dado un input y un botón, escribir nombres de personas e ir mostrando en una lista
+                desordenada a medida que se agregan.</p>
+            <form>
+                <h2>Ingresa un nombre</h2>
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre">
+                    </li>
+                    <li>
+                        <button type='button' value='convertir' onClick='agregarNombre()'>Agregar Nombre</button>
+                    </li>
+                </ul>
+            </form>
+            <span id="resultado"></span>
+        </main>
+        <aside>
+            <h2>Listado de nombres ingresados</h2>
+            <ul class="ul-ejercicio13" id="listado">
+            </ul>
+        </aside>
+    </div>
+    <script src="./assets/ejercicio14.js"></script>
+    <p><a href="./index.html">Regresar al índice</a></p>
+</body>
+</html>

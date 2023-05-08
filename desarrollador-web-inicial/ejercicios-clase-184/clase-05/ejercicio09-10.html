@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 09-10 </title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Ejercicios 09-10</h1>
+    <p>Ejercicio 09: Hacer un formulario con dos campos (pesos y dólares) que al presionar un botón
+        convierte de dólares a pesos. Supondremos que un dólar son trescientos pesos.
+        Mostrar el resultado elemento de html.</p>
+    <p>Ejercicio 10: Generar la inversa del ejercicio anterior (de pesos a dólares).</p>
+    <form>
+        <h1>Conversión de Monedas</h1>
+        <h2>Dólar a Pesos</h2>
+        <ul>
+            <li>
+                <label for="dolares">Dólares</label><br>
+                <input type="number" id="dolares" name="dolares">
+            </li>
+            <li>
+                <button type='button' value='convertir' onClick='convertirDolares()'>Convertir dólares a pesos</button>
+            </li>
+        </ul>
+    </form>
+    <form>
+        <h2>Pesos a dólares</h2>
+        <ul>
+            <li>
+                <label for="pesos">Pesos</label><br>    
+                <input type="number" id="pesos" name="pesos">
+            </li>
+            <li>
+                <button type='button' value='convertir' onClick='convertirPesos()'>Convertir pesos a dólares</button>
+            </li>
+        </ul>
+    </form>
+    <span id="resultado"></span>
+    <script src="./assets/ejercicio09-10.js"></script>
+    <p><a href="./index.html">Regresar al índice</a></p>
+</body>
+
+</html>

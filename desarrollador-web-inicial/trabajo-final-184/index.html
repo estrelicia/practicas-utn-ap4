@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="curso, cursos, programa, programar, diseño, diseñar, css, js, javascrip, figma, html" />
+  <meta name="description" content="Cursos de programación" />
+
+  <title>Programa Ya!</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Boostrap 5.3.0a -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- JSPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <!-- inicio header-->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col ellogo">
+          <img class="enunciado" src="imagenes/fotos/Identidad TPI Logo y leyenda azul.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid navegacion ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNavegacion"
+          aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="barraNavegacion">
+          <div class="navbar-nav navtextos mx-auto">
+            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#cursos">Cursos</a>
+            <a class="nav-link" href="#elegirnos">Por qué elegirnos</a>
+            <a class="nav-link" href="#registrate">Registrate</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--fin de header-->
+
+  <!-- SECCION ARROUSEL -->
+  <div id="carroselInicio" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carroselInicio" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carroselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carroselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="imagen-overlay"></div>
+        <img src="./imagenes/fotos/slider05.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="titulosCarousel">¿Querés aprender a programar ya?</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nam, iste neque quas est perferendis
+            expedita fugiat sapiente voluptatum ullam minus incidunt rem autem reprehenderit necessitatibus quos velit
+            illum dolore.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/fotos/slider06.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, quos aliquid? Sapiente vero, corporis
+            provident voluptatem quasi asperiores est. Esse molestias dolorem vero temporibus possimus autem culpa illo,
+            deleniti iusto?</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/fotos/slider05.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, eaque temporibus possimus exercitationem
+            quae a voluptatibus ipsam numquam aspernatur distinctio blanditiis culpa aut quaerat modi repellendus
+            asperiores, facere accusamus sunt.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      </div>
+    -->
+    <!-- CARROUSEL END -->
+
+<!-- SECCION NUESTROS CURSOS -->
+    <div id="cursos" class="container-fluid NuestrosCursos">
+      <div class="row">
+        <div class="col">
+          <h2>Nuestros Cursos</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-12 col-md-2">
+          <div class="caja">
+            <img src="imagenes/fotos/python otro.jpg" class="img-fluid" alt="es la imagen de Python" />
+            <h3>Python</h3>
+            <span class="caracteristicas">Introducción a Python</span>
+            <span class="caracteristicas">Python para principiantes</span>
+            <span class="caracteristicas">Python avanzado</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+          <div class="caja">
+            <img src="imagenes/fotos/Java.jpg" class="img-fluid" alt="Es la imagen de Java" />
+            <h3>Javascript</h3>
+            <span class="caracteristicas">Introducción a Javascript</span>
+            <span class="caracteristicas">Javascript para principiantes</span>
+            <span class="caracteristicas">Javascript avanzado</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+          <div class="caja">
+            <img src="imagenes/fotos/edgecomputin.jpg" class="img-fluid" alt="Es la imagen de edge" />
+            <h3>Edgecomputing</h3>
+            <span class="caracteristicas">Introducción a Edgecomputing</span>
+            <span class="caracteristicas">Edgecomputing para principiantes</span>
+            <span class="caracteristicas">Edgecomputing avanzado</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-2">
+          <div class="caja">
+            <img src="imagenes/fotos/HTML.jpg" class="img-fluid" alt="Es la imagen de Html" />
+            <h3>Html</h3>
+            <span class="caracteristicas">Introducción a HTML</span>
+            <span class="caracteristicas">HTML para principiantes</span>
+            <span class="caracteristicas">HTML avanzado</span>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+<!-- SECCION PROMO -->
+    <div class="container-fluid ComprasUn">
+      <div class="row">
+        <div class="col">
+          <h2>COMPRÁS UN CURSO Y TE REGALAMOS</h2>
+          <h3>1 MÁS<h3>
+              <button>Comenzar</button>
+        </div>
+      </div>
+    </div>
+
+<!-- SECCION POR QUÉ ELEGIRNOS -->
+    <div id="elegirnos" class="container-fluid">
+      <div class="row">
+        <div class="col-12 porqueElegirnos">
+          <h2>¿Porqué elegirnos?</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-3 d-flex grupoElegirnos">
+          <img src="imagenes/fotos/Estudia_desde_casa.png" alt="" />
+          <h3>Estudia desde tu casa</h3>
+          <p>Nuestro Campus Virtual basado en Moodle es accesible desde cualquier computadora, tablet o celular por
+            Internet.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 d-flex grupoElegirnos">
+          <img src="imagenes/fotos/Aulas_Virtuales.png" alt="" />
+          <h3>Aulas Virtuales</h3>
+          <p>Nuestros alumnos pueden cursar libremente las 24 hs. con la realización de actividades y la lectura de
+            materiales.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 d-flex grupoElegirnos">
+          <img src="imagenes/fotos/Horarios_Flexibles.png" alt="" />
+          <h3>Horarios Flexibles</h3>
+          <p>No exigimos un horario específico de conexión para el acceso a nuestras formaciones. La enseñanza es
+            asíncrona.
+          </p>
+        </div>
+        <div class="col-12 col-md-3 d-flex grupoElegirnos">
+          <img src="imagenes/fotos/Tutor_Personal.png" alt="" />
+          <h3>Tutor Personal</h3>
+          <p>Dispondrá de un tutor vía email para salvar cualquier consulta sobre materiales o exámenes durante el plazo
+            de
+            la formación.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- SECCION NUESTROS ALUMNOS -->
+    <div class="container-fluid alumnos">
+      <div class="row">
+        <div class="col-12 colAlumnos">
+          <h2>Cuentan nuestros alumnos</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-12 col-md-2 d-flex grupoAlumnos">
+          <button type="button" class="btn-cyn">Vale</button>
+          <img src="imagenes/fotos/Vale.png" alt="">
+          <p>Estoy feliz, pude aprender algo que me parecía imposible por mi falta de conocimientos y sin embargo lo
+            logré y ahora estoy trabajando para una empresa genial.</p>
+        </div>
+        <div class="col-12 col-md-2 d-flex grupoAlumnos">
+          <button type="button" class="btn-cyn">Tomy</button>
+          <img src="imagenes/fotos/Elipse 2.png" alt="">
+          <p>En Programa Ya encontré una comunidad genial para aprender, sin dificultad cursé y trabajé, ahora es hago
+            lo que siempre quise, trabajar de programador desde mi casa.</p>
+        </div>
+        <div class="col-12 col-md-2 d-flex grupoAlumnos">
+        <button type="button" class="btn-cyn">Lea</button>
+        <img src="imagenes/fotos/Elipse 3.png" alt="">
+        <p>Lo mejor: los profes y tutores, siempre atentos a consultas y dudas, increíble lo que se aprende, había
+            probado en otros lugares y no entendía, pero acá lo conseguí</p>
+        </div>
+        <div class="col-12 col-md-2 d-flex grupoAlumnos">
+         <button type="button" class="btn-cyn">Sole</button>
+            <img src="imagenes/fotos/Recurso 1.png" alt="">
+            <p>Increíble, estoy súper conforme, superó mis expectativas, mucha práctica, muy buenos profes, los compañeros que me tocaron, unos genios, ahora empiezo otro curso en Programa Ya, es lo más.</p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col colVideos">
+          <video class="vidAlumnos" width="500" controls>
+            <source src="imagenes/fotos/Mi - video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+<!-- SECCION FORMULARIO -->
+<section id="registrate" class="container-fluid d-flex justify-content-center">
+      <form id="formulario" class="was-validated">
+        <!-- Paso 01 -->
+        <div class="pasos">
+          <div class="container radiofield">
+            <div class="row colRegistrate">
+              <h2>Selecciona un curso</h2>
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="html" name="cursos" value="html" required>
+                  <label class="form-check-label" for="html"><img class=".img-fluid"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><br>HTML</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="javascript" name="cursos" value="javascript"
+                    required>
+                  <label class="form-check-label" for="javascript"><img class=".img-fluid"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /><br>Javascript</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 ">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="css" name="cursos" value="css" required>
+                  <label class="form-check-label" for="css"><img class=".img-fluid"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /><br>CSS</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12"><span id="error-radio"></span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Paso 02 -->
+        <div class="pasos">
+          <div class="row d-flex">
+            <h2>Ingresa tus datos</h2>
+            <div class="inputfield mensajes">
+              <label for="nombre" class="form-label" required>Nombre</label>
+              <input type="text" id="nombre" name="nombre" required /><br>
+            </div>
+            <div class="inputfield mensajes">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" id="apellido" name="apellido"><br>
+            </div>
+            <div class="inputfield mensajes">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" required><br>
+            </div>
+            <div class="inputfield mensajes">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" pattern="" placeholder="(+54) 011 1111-5555"><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="navform d-inline-flex">
+            <button type="button" id="anterior" onclick="navegador(-1)">anterior</button>
+            <button type="button" id="siguiente" onclick="navegador(1)">siguiente</button>
+          </div>
+        </div>
+      </form>
+    </section>
+<!-- FIN SECCION FORMULARIO -->
+
+<!-- FOOTER -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <h3>Deje su mensaje</h3>
+            <form>
+              <div class="form-group">
+                <p>Por favor deje su numero de telefono y nos contactaremos</p>
+                <input type="name" placeholder="Escriba su nombre completo">
+              </div>
+              <div class="form-group">
+                <input type="number" placeholder="Escriba su numero de telefono">
+              </div>
+              <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3>Nuestros horarios de atención:</h3>
+            <p>
+              <span>Lunes a Viernes: 08:00- 20:00</span>
+              <span>Sábados y Domingos: 10:00- 18:00</span>
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3>Encuentrenos en...</h3>
+            <p>
+              <span>+54 011 384756</span>
+              <span>Av UnLugar</span>
+              <span>Buenos Aires</span>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+<!-- FIN FOOTER -->
+
+      <p>JOIN THE LIST</p>
+      <p>Suscríbete a nuestro Newsletter para recibir las últimas actualizaciones de
+        nuestros cursos, descuentos exclusivos y acceso a Webinars.</p>
+      <div class="contenedor">
+        <div class="cajita">
+          <div class="cajaNews">
+            <p>¡Quiero Suscribirme!</p>
+    </footer>
+    <!--FIN DE FOOTER-->
+
+    <!-- SCRIPT FORMULARIO -->
+    <script src="./formulario.js"></script>
+    <!-- BOOTSTRAP 5.3.0a -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

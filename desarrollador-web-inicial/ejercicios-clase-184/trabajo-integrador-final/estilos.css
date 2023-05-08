@@ -1,0 +1,67 @@
+/* Se ocultan todos los pasos. El codigo de js se encarga de mostrarlos*/
+.pasos {
+  display: none;
+}
+#formulario {
+  padding: 2% 2.5% 2% 2.5%;
+  background-color: #ececec7a;
+  border:1px solid #8f8f8f69;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.pasos label {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.pasos input {
+  border:1px solid #8f8f8f69;
+  border-radius: 5px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.colcursos {
+  width: 100%;
+}
+
+/* Radio */
+.radiofield input {
+  display: none;
+}
+.radiofield label {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+input[type='radio'] + label {
+  background-color: #dfdfdf88;
+  border: 1px solid #8f8f8f69;
+  border-radius: 5px;
+  text-align: center;
+}
+input[type='radio'] + label:hover {
+  background-color: #bbbbbb88;
+}
+input[type='radio']:checked + label {
+  background-color: #bbbbbbc5;
+}
+/* Botones de Navegacióm */
+.navform {
+  display: inline-block;
+}
+.navform button {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border:1px solid #8f8f8f69;
+  border-radius: 5px;
+  background-color: #969696;
+  color:#FFFFFF;
+}
+.navform button:hover {
+  background-color: #707070;
+}

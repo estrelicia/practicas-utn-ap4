@@ -1,0 +1,397 @@
+/*aca Flavia se trajo el tipo de letra, lo copio
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600&family=Golos+Text&family=Inconsolata:wght@200;300;400;500;600&family=Josefin+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fcfcfc; /* fallback for old browsers */
+}
+/* ESTILOS MENU */
+.ellogo img {
+   display: flex;
+   flex-direction: column;
+   place-content: center;
+   position: absolute;
+   width: 210px;
+   height: 210px;
+  }
+.ellogo {
+  display: flex;
+  height: 170px;
+  justify-content: center;
+  align-items: center;
+}
+/*navegacion */
+.navegacion {
+  background-color: #3c92a6;
+}
+.navtextos a {
+  color: white;
+}
+/*(nav li hover)cuando pasa el cursor sobre menu cambia color */
+.nav-link:hover {
+  background-color: #c6d312;
+}
+.navbar-expand-lg {
+  padding: 0!important;
+}
+/** FIN ESTILOS MENU **/
+
+/** CARROUSEL **/
+.carousel-inner img {
+  height: 80vh;
+  object-fit: cover;
+}	
+.carousel-caption {
+  z-index: 10;
+}
+.imagen-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .4;
+}
+.titulosCarousel {
+  text-align: center;
+  font-size: 3rem;
+  z-index: 10;
+}
+/** FIN CARROUSEL **/
+
+/** NUESTROS CURSOS **/
+.NuestrosCursos {
+  padding: 5% 10% 5% 10%;
+}
+.caja {
+  width: 100%;
+  display: block;
+  background-color: #F8F8F8;
+  padding: 5%;
+}
+.caja:hover {
+  width: 100%;
+  display: block;
+  background-color: #F0F0F0;
+  padding: 5%;
+}
+.NuestrosCursos h2 {  
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color:#3c92a6;  
+  }
+.NuestrosCursos h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+.NuestrosCursos img {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
+.caracteristicas {
+  display: block;
+}
+/* compras un....*/
+ .ComprasUn {
+  width: 100%;
+  height: 300px;
+  background-color: #3c92a6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+ }
+ button {
+ cursor: pointer;
+ display: inline-block;
+ border: 0;
+ font-weight: bold;
+ padding: 10px 20px;
+ background: #c6d312;
+ color: #fff;
+ font-size: 15px;
+ border: 1px solid #fff;
+}
+/* Comentado por Ale: ahi le quite el punto a button, asi que ahora va a tener efecto el hover */
+button:hover {
+  flood-opacity: 0.9;
+} 
+/*no veo que cambie > No cambia porque es una etiqueta de html y no una clase. El punto antes del nombre indica que button es una clase, si le sacas el punto funciona. No lo cambio asi lo ves. Ale le saque el punto pero no veo que cambie */
+.ComprasUn h2 h3 {
+margin-bottom: 20px;
+}
+.ComprasUn button {
+  margin: 10px;
+  position: relative;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: #f39200;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+   overflow: hidden;
+  }
+  button:hover {
+    color: black;
+  }
+  button span {
+    position: absolute;
+    background: #fff;
+    transition: 0.5s;
+  }
+  button span:nth-child(1) {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+  }
+  button span:nth-child(2) {
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    right: -100%;
+  }
+  button span:nth-child(3) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+  }
+  button span:nth-child(4) {
+    width: 1px;
+    height: 100%;
+    bottom: -100%;
+    right: 0;
+  }
+  button:hover span:nth-child(1) {
+    left: 0;
+  }
+  button:hover span:nth-child(2) {
+    right: 0;
+  }
+  button:hover span:nth-child(3) {
+    bottom: 0;
+  }
+  button:hover span:nth-child(4) {
+    top: 0;
+  }
+
+/** SECCION POR QUE ELEGIRNOS **/
+h4 {
+  font-size: 30px;
+  color: #c6d312;
+}
+#elegirnos {
+  padding: 5% 10% 5% 10%;
+}
+.porqueElegirnos h2{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color:#3c92a6;  
+ }
+ .grupoElegirnos {
+  padding: 5%;
+  flex-direction: column;
+ }
+.grupoElegirnos img {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+}
+.grupoElegirnos h3 {
+font-size: 1.5rem;
+text-align: center;
+margin: 15px 0 15px 0;
+}
+/** FIN SECCION POR QUE ELEGIRNOS **/
+/** SECCION ALUMNOS **/
+.alumnos{
+  background-color: #F0F0F0;
+  padding: 5% 10% 5% 10%;
+}
+.grupoAlumnos {
+  flex-direction: column;
+  padding: 5%;
+}
+.grupoAlumnos button, .grupoAlumnos img {
+  margin: 0 auto;
+}
+.grupoAlumnos img {
+  width: 190px;
+  height: 190px;
+}
+.colAlumnos h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px!important;
+  font-weight: 700;
+  color:#3c92a6;  
+}
+.colVideos {
+  text-align: center;
+}
+.btn-cyn{
+  margin-bottom: 25px!important; /* Buscar de eliminar el !important */
+  border-color: #405B73;
+  background-color: #405B73;
+  width: 30%;
+  border-radius: 10px; /* Define el radio de los bordes */
+  padding: 10px 20px; /* Define el espacio interno del botón */
+  color: white; /* Define el color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  cursor: pointer;
+}
+.btn-cyn:hover {
+  background-color: #c6d312;
+  color: black;
+}
+/* Estilos Formulario de Ale*/
+/* Se ocultan todos los pasos. El codigo de js se encarga de mostrarlos*/
+#registrate {
+  background-color: #ececec7a;
+}
+.pasos {
+  display: none;
+}
+#formulario {
+  margin: 5%;
+  padding: 2% 5% 2% 5%;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.colRegistrate {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color:#3c92a6;  
+}
+.pasos .row h2 {
+  text-align: center;
+}
+.pasos label {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.pasos input {
+  border: 1px solid #8f8f8f69;
+  border-radius: 5px;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+input:valid {
+  color: green;
+  border-color: green;
+}
+input:invalid {
+  color: red;
+  border-color: red;
+}
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+/* Radio */
+.radiofield input {
+  display: none;
+}
+.radiofield label {
+  font-size: 2vw;
+  font-weight: 400;
+}
+.form-check img {
+  width: 25%;
+}
+input[type="radio"]:valid {
+  color: green;
+  border-color: green;
+}
+input[type="radio"]:invalid {
+  color: red;
+  border-color: red;
+}
+input[type="radio"] + label {
+  background-color: #dfdfdf88;
+  border: 1px solid #8f8f8f69;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10% 0 8% 0;
+}
+input[type="radio"] + label:hover {
+  background-color: #bbbbbb88;
+}
+input[type="radio"]:checked + label {
+  background-color: #bbbbbbc5;
+}
+/* Botones de Navegación del formulario */
+.navform {
+  justify-content: space-around;
+}
+.navform button {
+  margin: 1.5% 0 1.5% 0;
+  padding: 0.5% 0.5% 0.5% 0.5%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid #8f8f8f69;
+  border-radius: 5px;
+  background-color: #969696;
+  color: #ffffff;
+  width: 40%;
+}
+.navform button:hover {
+  background-color: #707070;
+}
+.botonPDF {
+  display: block;
+  padding: 0.5% 5% 1% 5%;
+  margin: 0 auto;
+  border: 1px solid #8f8f8f69;
+  border-radius: 5px;
+  background-color: #969696;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+.respuesta {
+  font-size: 1.1rem;
+}
+/*fin de estilo de formulario*/
+
+footer a i {
+  padding: 30px;
+  margin: 30px;
+  min-height: 20px;
+  width: 20px;
+  background-color: rgb(85, 233, 85);
+  /* background-color: rgb(112, 109, 109); */
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 30%;
+  color: red;
+  transition: all 10s ease;
+}
+

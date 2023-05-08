@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1>Ejercicio 12</h1>
+    <p>Hacer un formulario para solicitar el envío de una caja de cartón. En el formulario
+        podremos especificar las características de la caja.</p>
+    <form>
+        <h1>Formulario de Envío</h1>
+        <ul>
+            <li>
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" id="nombre" name="nombre">
+            </li>
+            <li>
+                <label for="material">Material de la caja: </label>
+                <select id="material">
+                    <option value="madera">Madera</option>
+                    <option value="carton">Cartón</option>
+                    <option value="plastico">Plástico</option>
+                </select>
+            </li>
+            <li class="radio-dimensiones">
+                <h4>Seleccione la dimensión de la caja:</h4>
+                <label for="peque">pequeño</label>
+                <input type="radio" id="peque" name="dimensiones" value="peque">
+                <label for="normal">normal</label>
+                <input type="radio" id="normal" name="dimensiones" value="normal">
+                <label for="grande">grande</label>
+                <input type="radio" id="grande" name="dimensiones" value="grande">
+            </li>
+            <li>
+                <label for="comentarios">Comentarios: </label><br>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+            </li>
+            <li> <button type="button" value="formulario" onClick="formularioE()">Enviar</button></li>
+        </ul>
+
+    </form>
+    <p><span id="resultado"></span></p>
+    <script src="./assets/ejercicio12.js"></script>
+    <p><a href="./index.html">Regresar al índice</a></p>
+</body>
+
+</html>
